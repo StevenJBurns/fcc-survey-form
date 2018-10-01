@@ -7,6 +7,7 @@ main {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  justify-items: center;
   background-color: #2E8B57;
   padding: 32px 0
 }
@@ -14,8 +15,15 @@ main {
 form {
   display: flex;
   flex-direction: column;
-  flex: 1 0 auto;
-  background-color: #C6FEDF
+  width: 100%;
+  max-width: 720px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #C6FEDF;
+  border-radius: 12px;
+  overflow: hidden;
+  /* flex: 1 0 auto; */
 }
 
 input {
