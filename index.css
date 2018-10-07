@@ -3,6 +3,10 @@
   padding: 0
 }
 
+body {
+  font-family: Futura, Roboto, Nunito, Helvetica, sans-serif
+}
+
 main {
   display: flex;
   min-height: 100vh;
@@ -10,6 +14,10 @@ main {
   justify-items: center;
   background-color: #2E8B57;
   padding: 32px 0
+}
+
+hr {
+  margin: 8px 0;
 }
 
 form {
@@ -26,13 +34,40 @@ form {
   /* flex: 1 0 auto; */
 }
 
-input {
-  min-width: 288px;
-  max-width: 320px
+.form-row {
+  display: flex;
+  flex-direction: row;
+  padding: 4px
+}
+
+label {
+  width: 50%;
+  margin: 0 8px;
+  text-align: right
+}
+
+input,
+select {
+  width: 144px;
+  margin: 0 8px
+}
+
+textarea {
+  width: 160px;
+  height: 64px
 }
 
 #submit {
   width: 96px;
   height: 40px;
+  font-size: 1em;
+  margin: 32px auto;
+  border: 0 solid;
+  border-radius: 8px;
+  background-color: darkturquoise
+}
+
+footer {
+  background-color: darkgreen
 }
   
