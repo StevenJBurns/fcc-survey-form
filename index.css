@@ -83,6 +83,34 @@ textarea {
 }
 
 footer {
+  padding: 32px 0;
   background-color: seagreen
 }
-  
+
+footer nav {
+  margin: 8px auto
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center
+}
+
+footer li {
+  margin: auto 8px
+}
+
+footer h4 {
+  text-align: center
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    background-color: #DDDDDD
+  }
+
+  form {
+    padding: 0
+  }
+}
