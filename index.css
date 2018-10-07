@@ -12,7 +12,7 @@ main {
   min-height: 100vh;
   flex-direction: column;
   justify-items: center;
-  background-color: #2E8B57;
+  background-color: mediumaquamarine;
   padding: 32px 0
 }
 
@@ -32,10 +32,9 @@ form {
   min-width: 320px;
   margin: 0 auto;
   padding: 24px;
-  background-color: #C6FEDF;
+  background-color: #DDDDDD;
   border-radius: 12px;
   overflow: hidden;
-  /* flex: 1 0 auto; */
 }
 
 .form-row {
@@ -56,11 +55,13 @@ select {
   margin: 0 8px
 }
 
-input[type="radio"] {
+input[type="radio"],
+input[type="checkbox"] {
   width: auto
 }
 
-#radio-group label {
+#radio-group label,
+#checkbox-group label {
   width: auto;
   margin: auto;
   font-family: Helvetica
@@ -76,12 +77,12 @@ textarea {
   height: 40px;
   font-size: 1em;
   margin: 32px auto;
-  border: 0 solid;
+  border: 2px darkturquoise solid;
   border-radius: 8px;
-  background-color: darkturquoise
+  background-color: turquoise
 }
 
 footer {
-  background-color: darkgreen
+  background-color: seagreen
 }
   
