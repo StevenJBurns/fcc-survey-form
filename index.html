@@ -16,15 +16,15 @@
         <p id="description">Tell us about your owner</p>
         <hr>
         <div class="form-row">
-          <label id="name-label-pet" for="name-pet">Name</label>
+          <label id="name-label-pet" for="name-pet">Pet's Name</label>
           <input type="text" id="name-pet" placeholder="Your Name" required>
         </div>
         <div class="form-row">
-          <label id="name-label" for="name">Name</label>
+          <label id="name-label" for="name">Owner's Name</label>
           <input type="text" id="name" placeholder="Your Owners Name" required>
         </div>
         <div class="form-row">
-          <label id="email-label" for="email">Email</label>
+          <label id="email-label" for="email">Owner's Email</label>
           <input type="email" id="email" placeholder="Your Owners Email" required>
         </div>
         <div class="form-row">
@@ -43,27 +43,61 @@
           </select>
         </div>
         <div class="form-row">
-          <label id="radio-group-label" for="dropdown">Species</label>
-          <fieldset>
-            <input type="radio" name="radio-group" value="A">A<br>
-            <input type="radio" name="radio-group" value="B">B<br>
-            <input type="radio" name="radio-group" value="C">C<br>
-            <input type="radio" name="radio-group" value="D">D<br>
-          </fieldset>
+          <label id="radio-group-label" for="dropdown">Your Relative Size</label>
+          <ul id="radio-group">
+            <li>
+              <input type="radio" name="radio-group" value="tiny">
+              <label>Tiny</label>
+            </li>
+            <li>
+              <input type="radio" name="radio-group" value="small">
+              <label>Small</label>
+            </li>
+            <li>
+              <input type="radio" name="radio-group" value="medium">
+              <label>Medium</label>
+            </li>
+            <li>
+              <input type="radio" name="radio-group" value="large">
+              <label>Large</label>
+            </li>
+            <li>
+              <input type="radio" name="radio-group" value="huge">
+              <label>Huge</label>
+            </li>
+          </ul>
         </div>
         <div class="form-row">
-          <label id="check-group-label" for="dropdown">Favorites</label>
-          <input type="checkbox" name="check-group" value="cuddles">Cuddles<br>
-          <input type="checkbox" name="check-group" value="walks">Walks<br>
-          <input type="checkbox" name="check-group" value="naps">Naps<br>
-          <input type="checkbox" name="check-group" value="snacks">Snacks<br>
-          <input type="checkbox" name="check-group" value="baths">Baths<br>    
-          <input type="checkbox" name="check-group" value="rides">Car Rides<br>    
-          <input type="checkbox" name="check-group" value="wrestling">Wrestling<br>    
-          <input type="checkbox" name="check-group" value="snacks">Snacks<br>    
+          <label id="check-group-label" for="dropdown">Your Favorite Things</label>
+          <ul>
+            <li>
+              <input type="checkbox" name="check-group" value="cuddles">Cuddles<br>
+            </li>
+            <li>
+              <input type="checkbox" name="check-group" value="walks">Walks<br>
+            </li>
+            <li>
+              <input type="checkbox" name="check-group" value="naps">Naps<br>
+            </li>
+            <li>
+              <input type="checkbox" name="check-group" value="snacks">Snacks<br>
+            </li>
+            <li>
+              <input type="checkbox" name="check-group" value="baths">Baths<br>
+            </li>
+            <li>
+              <input type="checkbox" name="check-group" value="rides">Car Rides<br>
+            </li>
+            <li>
+              <input type="checkbox" name="check-group" value="wrestling">Wrestling<br>
+            </li>
+            <li>
+              <input type="checkbox" name="check-group" value="snacks">Snacks<br>
+            </li>
+          </ul>
         </div>
         <div class="form-row">
-          <label id="text-area-label" for="text-area-comments">Tell us more</label>
+          <label id="text-area-label" for="text-area-comments">Tell Us More</label>
           <textarea id="text-area-comments" placeholder="Additional Comments"></textarea>
         </div>
         <button type="submit" id="submit">SUBMIT</button>
