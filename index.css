@@ -101,6 +101,17 @@ footer li {
   margin: auto 8px
 }
 
+footer a:link,
+footer a:visited {
+  color: black;
+  transition: all 0.25s
+}
+
+footer a:hover,
+footer a:active {
+  color: darkgreen
+}
+
 footer h4 {
   text-align: center
 }
