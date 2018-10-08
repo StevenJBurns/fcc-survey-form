@@ -15,8 +15,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 32px 0;
-  background-color: mediumaquamarine;
+  padding: 24px 0;
+  background-color: #AAAAAA;
 }
 
 header {
@@ -32,7 +32,8 @@ header div {
 
 header img {
   width: 80px;
-  height: 80px
+  height: 80px;
+  border: 2px #BBBBBB solid
 }
 
 hr {
@@ -54,6 +55,7 @@ ul {
   margin: auto;
   padding: 24px;
   background-color: #DDDDDD;
+  border: 2px #999999 solid;
   border-radius: 12px;
   overflow: hidden
 }
@@ -81,10 +83,10 @@ input[type="checkbox"] {
   width: auto
 }
 
-#radio-group label,
-#checkbox-group label {
-  width: auto;
-  margin: auto;
+#radio-group-label,
+#check-group-label,
+#text-area-label {
+  align-self: center;
   font-family: Helvetica
 }
 
@@ -98,9 +100,9 @@ textarea {
   height: 40px;
   font-size: 1em;
   margin: 32px auto;
-  border: 2px darkturquoise solid;
+  border: 0px darkturquoise solid;
   border-radius: 8px;
-  background-color: turquoise
+  background-color: #5EBB87
 }
 
 footer {
@@ -142,8 +144,9 @@ footer h4 {
     background-color: #DDDDDD
   }
 
-  form {
+  #survey-form {
     padding: 0;
+    border-width: 0;
     border-radius: 0
   }
 }
