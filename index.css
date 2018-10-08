@@ -4,37 +4,58 @@
 }
 
 body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   font-family: Futura, Roboto, Nunito, Helvetica, sans-serif
 }
 
 main {
+  flex: 1 0 auto;
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
-  justify-items: center;
+  align-items: center;
+  padding: 32px 0;
   background-color: mediumaquamarine;
-  padding: 32px 0
+}
+
+header {
+  padding: 8px;
+  display: flex;
+  flex-direction: row
+}
+
+header div {
+  flex: 1 0 auto;
+  align-self: center
+}
+
+header img {
+  width: 80px;
+  height: 80px
 }
 
 hr {
-  margin: 8px 0
+  width: 90%;
+  min-width: 288px;
+  margin: 8px auto
 }
 
 ul {
   list-style: none;
 }
 
-form {
+#survey-form {
+  flex: 0;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
   max-width: 720px;
-  min-width: 320px;
-  margin: 0 auto;
+  margin: auto;
   padding: 24px;
   background-color: #DDDDDD;
   border-radius: 12px;
-  overflow: hidden;
+  overflow: hidden
 }
 
 .form-row {
@@ -84,7 +105,7 @@ textarea {
 
 footer {
   padding: 32px 0;
-  background-color: seagreen
+  background-color: #5EBB87
 }
 
 footer nav {
@@ -116,12 +137,13 @@ footer h4 {
   text-align: center
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
   main {
     background-color: #DDDDDD
   }
 
   form {
-    padding: 0
+    padding: 0;
+    border-radius: 0
   }
 }
